@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=20ea7b38_002Dd42f_002D488c_002D8728_002D8b16742ca300/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestPredictionValue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::0A3A5580-1BF7-4D3F-86E3-9C33FB4D3F43::net6.0::LolaTests.TestPredictionValue&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41a0423e_002D3bea_002D4251_002D8bc0_002D3b7a744d9c3d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestPredictionValue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::0A3A5580-1BF7-4D3F-86E3-9C33FB4D3F43::net6.0::LolaTests.TestPredictionValue&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::0A3A5580-1BF7-4D3F-86E3-9C33FB4D3F43::net6.0::StateMachineTests.TestDefault&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::0A3A5580-1BF7-4D3F-86E3-9C33FB4D3F43::net6.0::StateMachineTests.TestEntry&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

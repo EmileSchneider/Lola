@@ -1,0 +1,62 @@
+﻿@page "/"
+@using Binance.Net.Clients
+@using CryptoExchange.Net
+@using LolaObserver.Data
+@using LolaObserver.Data.Binance
+
+<PageTitle>Index</PageTitle>
+
+<h5>BTCUSDT</h5>
+<p>Bid: @Bid</p>
+<p>Ask: @Ask</p>
+<p>Spread: @Spread</p>
+<p>
+    Average Spread:
+    @if (Spreads.ToList().Count > 0)
+    {
+        @Spreads.ToList().Average()
+        ;
+    }
+</p>
+
+<div style="width: 20%;">
+    <LiveLineChart DataPoints="@SpreadPoints"/>
+</div>
+
+@code {
+
+    BinanceSocketClient _socketClient;
+
+    public decimal Bid;
+    public decimal Ask;
+    public decimal Spread;
+
+    LimitQueue<decimal> Bids;
+    LimitQueue<decimal> Asks;
+    LimitQueue<decimal> Spreads;
+
+    List<double> SpreadPoints = new();
+
+
+    protected async override Task OnInitializedAsync()
+    {
+        _socketClient = BinanceClientFactory.NewSocketClient("jh1NGWCcGFJOflozRWHTcMrKPjAV8TB0BOTBCv9Em5iayCJq0Uqmq5IcxruoHFs5", "zyw53r1YIluUyP5cfo4q4LccCWYEwXKcFwYYhRtco9pAv106lRSXahtctjKqeV4o");
+
+        Bids = new LimitQueue<decimal>(50);
+        Asks = new LimitQueue<decimal>(50);
+        Spreads = new LimitQueue<decimal>(50);
+
+        await _socketClient.SpotStreams.SubscribeToOrderBookUpdatesAsync("BTCUSDT", 100, onMessage: (data) =>
+        {
+            Ask = data.Data.Asks.First().Price;
+            Bid = data.Data.Bids.First().Price;
+            Spread = Ask - Bid;
+            Bids.Enqueue(Bid);
+            Asks.Enqueue(Ask);
+            Spreads.Enqueue(Spread);
+            SpreadPoints = Spreads.ToList().Select(p => (double)p).ToList();
+            InvokeAsync(StateHasChanged);
+        });
+    }
+
+}

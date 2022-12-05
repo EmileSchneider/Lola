@@ -1,0 +1,48 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LolaObserver
+build_property.RootNamespace = LolaObserver
+build_property.ProjectDir = /home/emile/RiderProjects/Lola/LolaObserver/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/emile/RiderProjects/Lola/LolaObserver
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Shared/LiveLineChart.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0xpdmVMaW5lQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-znvt9bjw4c
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/emile/RiderProjects/Lola/LolaObserver/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/emile/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/emile/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/home/emile/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazorise/1.1.4.1/buildTransitive/Blazorise.props" Condition="Exists('$(NuGetPackageRoot)blazorise/1.1.4.1/buildTransitive/Blazorise.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorise.charts/1.1.4.1/buildTransitive/Blazorise.Charts.props" Condition="Exists('$(NuGetPackageRoot)blazorise.charts/1.1.4.1/buildTransitive/Blazorise.Charts.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorise.charts.streaming/1.1.4.1/buildTransitive/Blazorise.Charts.Streaming.props" Condition="Exists('$(NuGetPackageRoot)blazorise.charts.streaming/1.1.4.1/buildTransitive/Blazorise.Charts.Streaming.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorise.bootstrap5/1.1.4.1/buildTransitive/Blazorise.Bootstrap5.props" Condition="Exists('$(NuGetPackageRoot)blazorise.bootstrap5/1.1.4.1/buildTransitive/Blazorise.Bootstrap5.props')" />
+  </ImportGroup>
+</Project>
